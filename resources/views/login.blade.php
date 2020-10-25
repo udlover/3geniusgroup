@@ -12,13 +12,13 @@
         <!-- Favicon and touch icons -->
         <link rel="shortcut icon" href="{{asset('admin_assets/dist/img/ico/favicon.png')}}" type="image/x-icon">
         <!-- Bootstrap -->
-        <link href="admin_assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="{{asset('public/admin_assets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>
         <!-- Bootstrap rtl -->
         <!--<link href="admin_assets/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>-->
         <!-- Pe-icon-7-stroke -->
-        <link href="admin_assets/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
+        <link href="{{asset('public/admin_assets/pe-icon-7-stroke/css/pe-icon-7-stroke.css')}}" rel="stylesheet" type="text/css"/>
         <!-- style css -->
-        <link href="admin_assets/dist/css/stylecrm.css" rel="stylesheet" type="text/css"/>
+        <link href="{{asset('public/admin_assets/dist/css/stylecrm.css')}}" rel="stylesheet" type="text/css"/>
         <!-- Theme style rtl -->
         <!--<link href="admin_assets/dist/css/stylecrm-rtl.css" rel="stylesheet" type="text/css"/>-->
     </head>
@@ -70,9 +70,9 @@
         </div>
         <!-- /.content-wrapper -->
         <!-- jQuery -->
-        <script src="admin_assets/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="{{asset('public/admin_assets/plugins/jQuery/jquery-1.12.4.min.js')}}" type="text/javascript"></script>
         <!-- bootstrap js -->
-        <script src="admin_assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="{{asset('public/admin_assets/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
     </body>
 
 <!-- Mirrored from thememinister.com/crm/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Jun 2019 11:09:03 GMT -->
