@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Hash;
 
 class CustomerController extends Controller
 {
+    public function cust_list()
+    {
+        $obj = Customer::all();
+
+        return view('customer.cust_list', compact('obj'));
+    }
+
     public function add_cust(Request $req)
     {
         $cust = new Customer();
@@ -24,5 +31,11 @@ class CustomerController extends Controller
         $cust->save();
 
         return redirect('/');
+    }
+
+    public function cust_print($id)
+    {
+        $data = Customer::find($id);
+        return $data;
     }
 }

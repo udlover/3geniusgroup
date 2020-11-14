@@ -18,7 +18,11 @@ Route::group(['middleware' => 'web'], function () {
     Route::view('/', 'login');
     Route::post('login', 'AdminController@login');
     Route::view('dashboard', 'admin.dashboard');
-    route::get('logout', 'AdminController@logout');
+    route::get('/logout', 'AdminController@logout');
     Route::view('addcustomer', 'customer.add_customer');
     Route::post('add_cust', 'CustomerController@add_cust');
+    Route::get('customerlist', 'CustomerController@view_cust');
+    Route::get('print', 'CustomerController@print_cust');
+    Route::get('custlist', 'CustomerController@cust_list');
+    Route::get('print/{id}', 'CustomerController@cust_print');
 });

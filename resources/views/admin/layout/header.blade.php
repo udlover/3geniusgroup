@@ -2,10 +2,10 @@
     <a href="index.html" class="logo">
        <!-- Logo -->
        <span class="logo-mini">
-       <img src="{{asset('admin_assets/dist/img/mini-logo.png')}}" alt="">
+       <img src="{{asset('public/admin_assets/dist/img/mini-logo.png')}}" alt="">
        </span>
        <span class="logo-lg">
-       <img src="{{asset('admin_assets/dist/img/logo.png')}}" alt="">
+       <img src="{{asset('public/admin_assets/dist/img/3g.png')}}" alt="">
        </span>
     </a>
     <!-- Header Navbar -->
@@ -20,13 +20,13 @@
              <!-- user -->
              <li class="dropdown dropdown-user">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="{{asset('admin_assets')}}/dist/img/avatar5.png" class="img-circle" width="45" height="45" alt="user"></a>
+                <img src="{{asset('public/admin_assets/dist/img/avatar5.png')}}" class="img-circle" width="45" height="45" alt="user"></a>
                 <ul class="dropdown-menu" >
                    <li>
                       <a href="#">
                       <i class="fa fa-user"></i> Welcome {{session()->get('username')}}</a>
                    </li>
-                   <li><a href="/logout">
+                   <li><a href="{{url('logout')}}">
                       <i class="fa fa-sign-out"></i> Signout</a>
                    </li>
                 </ul>

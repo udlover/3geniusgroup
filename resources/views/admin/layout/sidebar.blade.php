@@ -19,8 +19,7 @@
              </a>
              <ul class="treeview-menu">
                 <li><a href="{{url('addcustomer')}}">Add Customer</a></li>
-                <li><a href="clist.html">List</a></li>
-                <li><a href="group.html">Groups</a></li>
+                <li><a href="{{url('custlist')}}">List</a></li>
              </ul>
           </li>
        </ul>
