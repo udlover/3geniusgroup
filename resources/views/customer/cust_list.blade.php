@@ -32,6 +32,7 @@
                   <td>{{$item->mobile}}</td>
                   <td>{{$item->plan}}</td>
                   <td><a href="print/{{$item->id}}" class="btn btn-primary btn-lg">Print</a></td>
+                  {{-- usman --}}
                </tr>
              @endforeach
           </tbody>
